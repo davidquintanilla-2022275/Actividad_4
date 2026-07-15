@@ -1,29 +1,29 @@
 import { Producto } from "../models/Producto";
-import { leerArticulos } from "../utils/reader";
-import { escribirArticulos } from "../utils/writer";
+import { leerProductos } from "../utils/reader";
+import { escribirProductos } from "../utils/writer";
 import { Factura } from "../models/Factura";
 import { validarArticulo } from "./validator";
 
 
-export async function listarArticulos(): Promise<Producto[]> {
-    const productos: Producto[] = await leerArticulos();
+export async function listarProductos(): Promise<Producto[]> {
+    const productos: Producto[] = await leerProductos();
     return productos;
 }
 
 export async function agregarArticulo(producto: Producto): Promise<void> {
     validarArticulo(producto);
-    const productos: Producto[] = await leerArticulos();
+    const productos: Producto[] = await leerProductos();
     productos.push(producto);
-    await escribirArticulos(productos);
+    await escribirProductos(productos);
 }
 
 export async function buscarArticulo(id: number): Promise<Producto | null> {
-    const productos: Producto[] = await leerArticulos();
+    const productos: Producto[] = await leerProductos();
     return productos.find(p => p.id === id) || null;
 }
 
 export async function eliminarArticulo(id: number): Promise<boolean> {
-    const productos: Producto[] = await leerArticulos();
+    const productos: Producto[] = await leerProductos();
     if (id <= 0) return false;
 
     const index = productos.findIndex(p => p.id === id);
@@ -33,13 +33,13 @@ export async function eliminarArticulo(id: number): Promise<boolean> {
     }
 
     productos.splice(index,1);
-    await escribirArticulos(productos);
+    await escribirProductos(productos);
     return true;
 }
 
 export async function editarArticulo(id: number, producto: Producto): Promise<boolean> {
     validarArticulo(producto);
-    const productos: Producto[] = await leerArticulos();
+    const productos: Producto[] = await leerProductos();
     if (id <= 0) return false;
 
     const index = productos.findIndex(p => p.id === id);
@@ -49,7 +49,7 @@ export async function editarArticulo(id: number, producto: Producto): Promise<bo
     }
 
     productos[index] = {...productos[index], ...producto};
-    await escribirArticulos(productos);
+    await escribirProductos(productos);
     return true;
 }
 
