@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mesa de Comedor Premium",
+        "stock": 10,
+        "descripcion": "Mesa de madera para seis personas con acabado natural.",
+        "categoria": "MUEBLES",
+        "estado": "EN_VENTA",
+        "precio": 3200,
+        "descuento": 12
+    },
+    {
+        "id": 2,
+        "nombre": "Smart TV 55 Pulgadas 4K",
+        "stock": 15,
+        "descripcion": "Televisor inteligente con resolución Ultra HD y sistema Android.",
+        "categoria": "ELECTRODOMESTICOS",
+        "estado": "EN_VENTA",
+        "precio": 5400,
+        "descuento": 18
+    },
+    {
+        "id": 3,
+        "nombre": "Desinfectante Antibacterial 1L",
+        "stock": 70,
+        "descripcion": "Desinfectante para superficies con aroma a limón.",
+        "categoria": "LIMPIEZA",
+        "estado": "EN_VENTA",
+        "precio": 28,
+        "descuento": 8
+    },
+    {
+        "id": 4,
+        "nombre": "Zapatos Casual Hombre",
+        "stock": 30,
+        "descripcion": "Zapatos cómodos de cuero sintético para uso diario.",
+        "categoria": "ROPA",
+        "estado": "EN_VENTA",
+        "precio": 350,
+        "descuento": 20
+    },
+    {
+        "id": 5,
+        "nombre": "Monitor Curvo 32 Pulgadas",
+        "stock": 7,
+        "descripcion": "Monitor QHD de 165 Hz ideal para videojuegos y trabajo.",
+        "categoria": "TECNOLOGIA",
+        "estado": "BORRADOR",
+        "precio": 4200,
+        "descuento": 5
+    }
+]

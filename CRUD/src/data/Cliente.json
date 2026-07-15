@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "nombre": "Sofía",
+        "apellido": "Castillo",
+        "telefono": 50261112233,
+        "edad": 31,
+        "dpi": 7890123456701,
+        "estado": "ACTIVO",
+        "categoria": "VIP"
+    },
+    {
+        "id": 2,
+        "nombre": "Diego",
+        "apellido": "Méndez",
+        "telefono": 50262223344,
+        "edad": 27,
+        "dpi": 8901234567802,
+        "estado": "INACTIVO",
+        "categoria": "REGULAR"
+    },
+    {
+        "id": 3,
+        "nombre": "Valeria",
+        "apellido": "Herrera",
+        "telefono": 50263334455,
+        "edad": 45,
+        "dpi": 9012345678903,
+        "estado": "ACTIVO",
+        "categoria": "MAYORISTA"
+    },
+    {
+        "id": 4,
+        "nombre": "Andrés",
+        "apellido": "Fuentes",
+        "telefono": 50264445566,
+        "edad": 22,
+        "dpi": 1123456789004,
+        "estado": "ACTIVO",
+        "categoria": "REGULAR"
+    },
+    {
+        "id": 5,
+        "nombre": "Gabriela",
+        "apellido": "Ortiz",
+        "telefono": 50265556677,
+        "edad": 38,
+        "dpi": 2234567890105,
+        "estado": "INACTIVO",
+        "categoria": "VIP"
+    }
+]
